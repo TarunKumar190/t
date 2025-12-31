@@ -1,0 +1,106 @@
+.about-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* CONTENT */
+.about-content h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.about-content h2 span {
+  color: #ff8c00;
+}
+
+.about-highlight {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* STATS */
+.about-stats {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+
+.about-stats div h3 {
+  font-size: 28px;
+  color: #ff8c00;
+  margin-bottom: 4px;
+}
+
+.about-stats div span {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* IMAGE CARD */
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: 100%;
+  max-width: 320px;
+  height: 320px;
+
+  background: linear-gradient(135deg, #ff8c00, #ff6a00);
+  color: #fff;
+
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.image-card span {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.image-card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,239 @@
+/* ===== HERO SECTION (GLOBAL) ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35)
+  );
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.breadcrumb a {
+  color: #ff8800;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+}
+
+/* ===== MOBILE HERO ===== */
+@media (max-width: 768px) {
+  .hero {
+    height: 55vh;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-page {
+  background: #f7f8fc;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* ===== LEFT FORM ===== */
+.contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #ff8800;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* ===== BUTTON ===== */
+.btn-primary {
+  background: linear-gradient(135deg, #ff9a00, #ff6a00);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 106, 0, 0.4);
+}
+
+/* ===== RIGHT INFO ===== */
+.contact-info {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.map-placeholder {
+  margin-top: 20px;
+  background: #eef1f7;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE LAYOUT ===== */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form h2 {
+    font-size: 24px;
+  }
+
+  .btn-primary {
+    font-size: 15px;
+  }
+}
+
+/* ================================================= */
+/* ===== Enquiry Method Pills (WhatsApp / Email) ==== */
+/* ================================================= */
+
+/* Only style labels that CONTAIN radio inputs */
+.contact-form label:has(input[type="radio"]) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background-color: #f5deb3; /* wheat */
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e0cfa9;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+/* Hide actual radio */
+.contact-form label input[type="radio"] {
+  display: none;
+}
+
+/* Hover */
+.contact-form label:has(input[type="radio"]):hover {
+  background-color: #f0d7a1;
+}
+
+/* Selected state */
+.contact-form label:has(input[type="radio"]:checked) {
+  background-color: #e6c78c;
+  border-color: #d6b26c;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}

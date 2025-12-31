@@ -1,0 +1,22 @@
+:root {
+  /* Brand Colors (original, not copied) */
+  --primary: #0f766e;     /* deep teal */
+  --secondary: #0284c7;   /* sky blue */
+  --accent: #f97316;      /* warm orange */
+
+  /* Backgrounds */
+  --bg-main: #f8fafc;
+  --bg-white: #ffffff;
+
+  /* Text */
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+
+  /* UI */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.12);
+}

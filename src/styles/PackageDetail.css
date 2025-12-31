@@ -1,0 +1,87 @@
+.package-hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.package-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,.65), rgba(0,0,0,.2));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.package-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff7a00;
+}
+
+.package-desc {
+  margin: 1rem 0 2rem;
+  color: #555;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tabs button.active {
+  background: #ff7a00;
+  color: #fff;
+  border-color: #ff7a00;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-content li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.enquire-box {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.enquire-btn {
+  padding: 14px 36px;
+  font-size: 1rem;
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

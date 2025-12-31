@@ -1,0 +1,142 @@
+/* NAVBAR BASE */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* INNER CONTAINER */
+.navbar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.logo span {
+  color: #ff9800;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #ff9800;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* CTA */
+.nav-cta {
+  display: flex;
+  align-items: center;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #ff9800, #ff6f00);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,152,0,0.35);
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #222;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Hide desktop nav */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 0;
+    display: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Hide CTA on mobile */
+  .nav-cta {
+    display: none;
+  }
+
+  /* Hamburger positioning */
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+}

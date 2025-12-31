@@ -1,0 +1,146 @@
+/* =========================
+   DESTINATIONS HERO (FIXED)
+========================= */
+
+.destinations-hero {
+  position: relative;
+  width: 100%;
+  height: 38vh;           /* 👈 FORCE HEIGHT */
+  min-height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;     /* 👈 PREVENT OVERLAPS */
+}
+
+/* Overlay */
+.destinations-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(11, 28, 57, 0.65),
+    rgba(11, 28, 57, 0.25)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+/* Title */
+.destinations-hero-overlay h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.breadcrumb a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .destinations-hero {
+    height: 45vh;
+  }
+
+  .destinations-hero-overlay h1 {
+    font-size: 30px;
+  }
+}
+.destinations-page {
+  position: relative;
+  z-index: 0;
+  padding-top: 40px; /* 👈 SEPARATION FROM HERO */
+  background: #f9fafc;
+}
+
+/* GRID */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin:20px;
+}
+
+/* TILE LINK */
+.destination-tile {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* IMAGE */
+.destination-tile-image {
+  position: relative;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* CATEGORY BADGE */
+.destination-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #0b1c39;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 3;
+}
+
+/* OVERLAY */
+.destination-tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.destination-tile:hover .destination-tile-overlay {
+  opacity: 1;
+}
+
+/* TITLE */
+.destination-tile-overlay h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* HOVER ZOOM */
+.destination-tile:hover .destination-tile-image {
+  transform: scale(1.04);
+  transition: transform 0.4s ease;
+}

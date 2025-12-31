@@ -1,0 +1,114 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGE */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: zoomEffect 6s ease forwards;
+}
+
+/* ZOOM ANIMATION */
+@keyframes zoomEffect {
+  from {
+    transform: scale(1.12);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.25)
+  );
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENT */
+.hero-content {
+  margin-left: 8%;
+  max-width: 700px;
+  color: #fff;
+  animation: fadeUp 0.9s ease;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.hero-content span {
+  color: #ff8c00;
+}
+
+.hero-content p {
+  margin-top: 14px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* BUTTONS */
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 18px;
+}
+
+.btn-primary {
+  background: #ff8c00;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* TEXT ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
