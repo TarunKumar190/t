@@ -8,7 +8,7 @@ const Destinations = () => {
       {/* HERO */}
       <section
         className="destinations-hero"
-        style={{ backgroundImage: `url('/images/destination.jpg')` }}
+        style={{ backgroundImage: `url('/images/destination.webp')` }}
       >
         <div className="destinations-hero-overlay">
           <h1>Destination</h1>

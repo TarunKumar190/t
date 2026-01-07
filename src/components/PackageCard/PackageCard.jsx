@@ -10,8 +10,10 @@ export default function PackageCard({ pkg }) {
     <div className="package-card">
       {/* IMAGE */}
       <div className="package-image">
-        <img src={pkg.image} alt={pkg.title} loading="lazy"
-  decoding="async" />
+        <picture>
+          <source srcSet={pkg.image.replace(/\.(jpg|jpeg|png)$/i, '.webp')} type="image/webp" />
+          <img src={pkg.image} alt={pkg.title} loading="lazy" decoding="async" />
+        </picture>
       </div>
 
       {/* CONTENT */}

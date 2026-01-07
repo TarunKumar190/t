@@ -68,8 +68,9 @@ export default function Footer() {
         <div>
           <h4>Contact Us</h4>
           <ul>
-            <li>📞 +91 8287084080</li>
-            <li>📧 jayshreeramoffice2024@gmail.com</li>
+            <li>📞<a href="tel:+918287084080">+91 8287084080</a></li>
+            <li>📞<a href="tel:+919084654080">+91 9084654080</a></li>
+            <li>📧 <a href="mailto:jayshreeramoffice2024@gmail.com">jayshreeramoffice2024@gmail.com</a></li>
             <li>📍 Gangapur road Rudrapur Uttarakhand</li>
           </ul>
         </div>

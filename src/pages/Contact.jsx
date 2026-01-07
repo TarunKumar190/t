@@ -110,7 +110,7 @@ ${formData.message}
       {/* HERO */}
       <section
         className="hero"
-        style={{ backgroundImage: "url('/images/contact.jpg')" }}
+        style={{ backgroundImage: "url('/images/contact.webp')" }}
       >
         <div className="hero-overlay">
           <div className="hero-content">
@@ -200,8 +200,9 @@ ${formData.message}
 
           <div className="contact-info">
             <h3>Get in touch</h3>
-            <p><strong>📞</strong> +91 8287084080</p>
-            <p><strong>📧</strong> jayshreeramoffice2024@gmail.com</p>
+            <p><strong>📞</strong> <a href="tel:+918287084080">+91 8287084080</a></p>
+            <p><strong>📞</strong> <a href="tel:+919084654080">+91 9084654080</a></p>
+            <p><strong>📧</strong> <a href="mailto:jayshreeramoffice2024@gmail.com">jayshreeramoffice2024@gmail.com</a></p>
             <p><strong>📍</strong> Gangapur road Rudrapur Uttarakhand</p>
           </div>
         </div>

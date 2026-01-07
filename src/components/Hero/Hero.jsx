@@ -3,21 +3,21 @@ import "./Hero.css";
 
 const slides = [
   {
-    image: "../images/Hero/hero1.jpg",
+    image: "../images/Hero/hero1.webp",
     title: "Explore Uttarakhand",
     highlight: "With Local Experts",
     subtitle:
       "Discover breathtaking destinations, curated experiences, and unforgettable journeys."
   },
   {
-    image: "../images/Hero/hero2.jpg",
+    image: "../images/Hero/hero2.webp",
     title: "Best Pocket Friendly",
     highlight: "Tour Packages",
     subtitle:
       "Affordable, well-planned tours designed for everyone."
   },
   {
-    image: "../images/Hero/hero3.jpg",
+    image: "../images/Hero/hero3.webp",
     title: "Unforgettable",
     highlight: "Trekking Experiences",
     subtitle:

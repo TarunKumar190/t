@@ -7,10 +7,13 @@ export default function TopBar() {
       <div className="topbar-container">
         <div className="topbar-left">
           <span>
-            <FaPhoneAlt /> +91 82870 84080
+            <FaPhoneAlt /> <a href="tel:+918287084080">+91 82870 84080</a>
           </span>
           <span>
-            <FaEnvelope /> jayshreeramoffice2024@gmail.com
+            <FaPhoneAlt /> <a href="tel:+919084654080">+91 90846 54080</a>
+          </span>
+          <span>
+            <FaEnvelope /> <a href="mailto:jayshreeramoffice2024@gmail.com">jayshreeramoffice2024@gmail.com</a>
           </span>
         </div>
 

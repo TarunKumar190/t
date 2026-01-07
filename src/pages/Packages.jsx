@@ -8,7 +8,7 @@ export default function Packages() {
       {/* HERO SECTION */}
       <section className="packages-hero">
         <img
-          src="../../public/images/packages.jpg"
+          src="../../public/images/packages.webp"
           alt="Uttarakhand Tour Packages"
           className="packages-hero-img"
         />
