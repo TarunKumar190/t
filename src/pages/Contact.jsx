@@ -12,8 +12,6 @@ const Contact = () => {
 
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
-    phone: "",
     package: "",
     price: "",
     message: ""
@@ -75,24 +73,23 @@ Duration: ${selected.duration}`
       return;
     }
 
-    const baseMessage = `
+const baseMessage = `
 Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
 
 Enquiry For:
 ${formData.package || "General Enquiry"}
 
-Message:
-${formData.message}
-    `;
+${formData.message ? `Message:\n${formData.message}` : ""}
+`;
+
 
     // WhatsApp
     if (contactMethod === "whatsapp") {
       const whatsappNumber = "919761114080";
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-        "Hello UK Travels 👋\n\n" + baseMessage
-      )}`;
+  "Hello UK Travels 👋\n\n" + baseMessage
+)}`;
+
       window.open(whatsappURL, "_blank");
     }
 

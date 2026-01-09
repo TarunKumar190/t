@@ -22,15 +22,14 @@ export default function ContactForm() {
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  const message = `
-Name: ${form.name}
-Phone: ${form.phone}
-Email: ${form.email}
-Package: ${form.package}
-Message: ${form.message}
-`;
+  let message = `Name: ${form.name}`;
+  if (form.package) message += `\nEnquiry For:\n${form.package}`;
+  if (form.message) message += `\nMessage:\n${form.message}`;
 
-  const whatsappURL = `https://wa.me/919999999999?text=${encodeURIComponent(message)}`;
+  // Remove trailing blank lines
+  message = message.replace(/\n{2,}/g, '\n').trim();
+
+  const whatsappURL = `https://wa.me/+919761114080?text=${encodeURIComponent(message)}`;
   window.open(whatsappURL, "_blank");
 };
 
