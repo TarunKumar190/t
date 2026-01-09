@@ -16,7 +16,7 @@ export const packages = [
     ],
     inclusions: ["Hotel stay (2 nights)", "All transfers by vehicle", "Breakfast"],
     exclusions: ["Lunch & Dinner", "Personal expenses", "Entrance fees (if any)"],
-    gallery: ["/images/Mussoorie/mussoorie_3.jpg", "/images/Mussoorie/mussoorie_4.jpg"],
+    gallery: ["/images/Mussoorie/mussoorie_3.webp", "/images/Mussoorie/mussoorie_4.webp"],
     link: "/packages/mussoorie-weekend-escape"
   },
   {
@@ -36,7 +36,7 @@ export const packages = [
     ],
     inclusions: ["Accommodation (3 nights)", "Daily breakfast", "Local transfers"],
     exclusions: ["Boat charges", "Guide fees", "Meals other than breakfast"],
-    gallery: ["/images/Nainital/nainital_1.jpg", "/images/Nainital/nainital_4.jpg"],
+    gallery: ["/images/Nainital/nainital_1.webp", "/images/Nainital/nainital_4.webp"],
     link: "/packages/nainital-family-tour"
   },
   {
@@ -57,7 +57,7 @@ export const packages = [
     ],
     inclusions: ["All transfers", "Hotel stays", "Pilgrim assistance"],
     exclusions: ["Insurance", "Any personal expenses"],
-    gallery: ["/images/Kedarnath/kedarnath_1.jpg", "/images/Badrinath/badrinath_1.jpg"],
+    gallery: ["/images/Kedarnath/kedarnath_1.webp", "/images/Badrinath/badrinath_1.webp"],
     link: "/packages/char-dham-yatra"
   },
   {
@@ -77,7 +77,7 @@ export const packages = [
     ],
     inclusions: ["Rafting permits & equipment", "Campsite stay", "Breakfast"],
     exclusions: ["Lunch/Dinner", "Tips & personal expenses"],
-    gallery: ["/images/Rishikesh/rishikesh_1.jpg", "/images/Rishikesh/rishikesh_2.jpg"],
+    gallery: ["/images/Rishikesh/rishikesh_1.webp", "/images/Rishikesh/rishikesh_2.webp"],
     link: "/packages/rishikesh-adventure"
   },
   {
@@ -93,7 +93,7 @@ export const packages = [
     itinerary: ["Day 1: Arrive & Ganga Aarti", "Day 2: Temple visits & depart"],
     inclusions: ["1 night accommodation", "Breakfast", "Local transfers"],
     exclusions: ["Meals other than breakfast", "Donation/Prasad"],
-    gallery: ["/images/Haridwar/haridwar1.jpg", "/images/Haridwar/haridwar2.jpg"],
+    gallery: ["/images/Haridwar/haridwar1.webp", "/images/Haridwar/haridwar2.webp"],
     link: "/packages/haridwar-spiritual-retreat"
   },
   {
