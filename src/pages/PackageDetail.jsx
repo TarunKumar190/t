@@ -17,10 +17,9 @@ const PackageDetail = () => {
   return (
     <section className="package-detail">
       {/* Hero */}
-      <div
-        className="package-hero"
-        style={{ backgroundImage: `url(${pkg.image})` }}
-      >
+
+      <div className="package-hero">
+        <img src={pkg.image} alt={pkg.title} className="package-hero-img" />
         <div className="overlay">
           <h1>{pkg.title}</h1>
           <p>{pkg.duration}</p>
