@@ -126,3 +126,4 @@ Total Reviews: {reviews.length}
 </section>
 );
 }
+// Note: The above code assumes you have a "reviews" table in your Supabase database with columns: id, name, review, rating, created_at. Adjust the column names as needed.
