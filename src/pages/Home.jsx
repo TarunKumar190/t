@@ -6,6 +6,7 @@ import FeaturedPackages from "../components/FeaturedPackage/FeaturedPackage";
 import PopularDestinations from "../components/PopularDestination/PopularDestination";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import FeaturedServices from "../components/FeaturedServices/FeaturedServices";
+import Reviews from "../components/Reviews/Reviews";
 
 export default function Home() {
   const location = useLocation();
@@ -38,7 +39,9 @@ export default function Home() {
       <section id="destinations">
         <PopularDestinations />
       </section>
-
+      <section id="reviews">
+        <Reviews />
+      </section>
       <section id="about">
         <WhyChooseUs />
       </section>
