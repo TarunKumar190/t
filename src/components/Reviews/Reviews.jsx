@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../lib/supabase";
 import ReviewForm from "../ReviewForm";
-import "./Reviews.css";
+import "./reviews.css";
 
 export default function Reviews() {
 
